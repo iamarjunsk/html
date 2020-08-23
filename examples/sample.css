@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main .slides{
+    display: flex;
+}
+main .slides div{
+    background-color: #123132;
+    flex: 1;
+    height: 140px;
+    margin: 5px;
+}
+main .main{
+    display: flex;
+}
+main .main .mainbox{
+    height: 30rem;
+    flex:4;
+    background-color: rgb(26, 133, 160);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+main .main .sidebox{
+    height: 30rem;
+    flex: 1;
+    background-color: rgb(23, 73, 131);
+}
+main .main .mainbox div{
+    height: 6rem;
+    width: 6rem;
+    background-color: #fff;
+}
