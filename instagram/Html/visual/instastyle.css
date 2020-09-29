@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.maindiv .frstsubdiv{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.frstsubdiv h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+input{
+    border: none;
+}
+.inputgrp {
+    padding-left: 40px;
+    padding-top: 8px;
+    border-radius: 8px;
+    border: 2px black solid;
+}
+.icons img{
+    padding-left: 20px;
+}
+.secdiv .img1{
+    display: flex;
+    flex: 4;
+}
+.secdiv{
+    display: flex;
+}
+.propic{
+    flex: 2;
+}
