@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <table border="1" align="center" width="40%" height="80%">
+            <tr>
+                <td align="center" colspan="6">HTML TABLE </td>
+                <td align="center" bgcolor="cyan">A</td>
+                <td align="center" bgcolor="orange">B</td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="#E9CEC9" rowspan="3" colspan="2">C</td>
+                <td align="center" bgcolor="#B874AC" colspan="2">D</td>
+                <td align="center" bgcolor="red" colspan="2">E</td>
+                <td align="center" bgcolor="yellow" colspan="1">F</td>
+                <td align="center" bgcolor="green" colspan="1">G</td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="green" colspan="2">H</td>
+                <td align="center" bgcolor="silver" colspan="3">I</td>
+                <td align="center" bgcolor="pink" rowspan="2">J</td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="pink" colspan="2">K</td>
+                <td align="center" bgcolor="orange" colspan="2">L</td>
+                <td align="center" bgcolor="violet">M</td>
+            </tr>
+            <tr>
+                <td align="center" bgcolor="gold" colspan="2">N</td>
+                <td align="center" bgcolor="red" colspan="6">0</td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -3,14 +3,17 @@ import requests
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/post', methods=['GET', 'POST'])
+def method_post():
+    return request.form
+
+@app.route('/get', methods=['GET','POST'])
+def method_get():
+    return request.args
+@app.route('/add', methods=['GET', 'POST'])
 def method_name():
-    if request.method=="POST":
-        name=request.form.get('fname')
-        print(request.form)
-        return request.form
-    else:
-        name=request.args.get('fname')
-        return "Hai "+name
+    q=request.form['q']
+    a="You entered "+q
+    return a
 if __name__ == "__main__":
     app.run(debug=True)
