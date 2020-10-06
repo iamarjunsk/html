@@ -1,0 +1,15 @@
+body{
+    background-color: blue;
+    color: white;
+}
+a:visited{
+    color: yellow;
+}
+li{
+    color: green;
+    font-size: x-large;
+}
+h1{
+    color: red;
+    text-decoration: underline;
+}

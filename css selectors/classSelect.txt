@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>class Selector</title>
+    </head>
+    <style type="text/css">
+        p.c1{
+            color: red;
+        }
+        p.c2{
+            color: purple;
+        }
+    </style>
+    <body>
+        <p class="c1">MESCE</p>
+        <p class="c2">MCA</p>
+    </body>
+</html>

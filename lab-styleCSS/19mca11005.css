@@ -1,0 +1,21 @@
+body{
+    background: url("./photo-1502447533750-9860c1269ae3.jpeg");
+}
+p{
+    color: yellow;
+    letter-spacing: 2px;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+h1{
+    color: green;
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Georgia;
+}
+a{
+    color: red;
+}

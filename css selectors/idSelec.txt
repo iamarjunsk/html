@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>id Selector</title>
+    </head>
+    <style type="text/css">
+        #id1{
+            background-color: red;
+        }
+        #id2{
+            background-color: blue;
+        }
+    </style>
+    <body>
+        <h1 id="id1">MESCE</h1>
+        <h1 id="id2">MESCE</h1>
+    </body>
+</html>

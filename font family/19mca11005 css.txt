@@ -1,0 +1,10 @@
+body{
+    background-color: gray;
+    font-family: Verdana;
+    width: 500px;
+    height: 500px;
+    font-size: 1.2em;
+}
+h2{
+    color: blue;
+}

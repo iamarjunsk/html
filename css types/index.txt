@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>CSS types</title>
+        <style>
+            body{
+                background-color: rgb(31, 190, 164);
+            }
+        </style>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 style="color: rgb(17, 91, 121);">
+            CSS types
+        </h1>
+        <p style="color: rgb(129, 15, 120);">
+            Inline | Internal | External
+        </p>
+    </body>
+</html>
