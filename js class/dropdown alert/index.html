@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown alert</title>
+    <style>
+        .sec{
+            color: green;
+            height: 100vh;
+            text-align: center;
+        }
+        #bikes{
+            margin-top: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="sec">
+        <label for="bikes">Select a bike</label>
+        <select name="bikes" id="bikes" onchange="show()">
+            <option value="" selected></option>
+            <option value="YAMAHA">YAMAHA</option>
+            <option value="HONDA">HONDA</option>
+            <option value="SUZUKI">SUZUKI</option>
+            <option value="DUCATI">DUCATI</option>
+        </select>
+    </div>
+    <script>
+        bike =  document.getElementById('bikes');
+        function show(){
+            if(bike.value != ''){
+                alert(bike.value)
+            }
+        }
+    </script>
+</body>
+</html>

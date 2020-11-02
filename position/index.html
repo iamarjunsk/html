@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position</title>
+</head>
+<body>
+    <div style="position: static; left: 80px; top: 20px; background-color: orange;">
+        <h3>This div has Static positioning</h3>
+        Static positioned elements are not affected by the top, bottom, left, and right properties.
+    </div>
+    <div style="position: fixed; left: 60px; top: 120px; background-color: green;">
+        <h3>This div has Fixed positioning</h3>
+        An element with position:fixed, is positioned relative to the viewport. Which means it always stays in the same place even if the page scrolled. <br>
+        top, right, bottom, left properties are used to position the element. <br>
+    </div>
+    <div style="position: absolute; left: 80px; top: 200px; background-color: red;">
+        <h3>This div has Absolute positioning</h3>
+        An element with position:absolute, is positioned relative to the nearest positioned ancestor(insted of positioned relative to the viewport). <br>
+        However, id an absolute positioned element has no positioned ancestors, it uses the document body, and moved along with page scrolling.
+    </div>
+    <div style="position: relative; left: 5px; top: 240px; background-color: yellow; border: 4px solid #73AD21;">
+        <h3>This div has Relative positioning</h3>
+        An element with position:relative, is positioned relative to the normal position<br>
+        Setting the top, right, bottom, and left properties of a relatively -positioned element will not be adjusted to fit into any gap  left by the elemtnt. 
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

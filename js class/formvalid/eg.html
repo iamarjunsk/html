@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(150, 128, 31);
+}
+.container form{
+    padding: 2rem 3rem;
+    border-radius: .3rem;
+    
+}
+.container form div{
+    margin-top: 20px;
+}
+.input{
+    width: 17rem;
+    height: 1.8rem;
+    border-radius: .3rem;
+    border-color: rgb(20, 167, 130);
+    border: none;
+    box-sizing: 0;
+    color: rgb(24, 96, 99);
+    padding-left: 5px;
+}
+.txtarea{
+    height: 4rem;
+    width: 17rem;
+    border-radius: .3rem;
+    border-color: rgb(20, 167, 130);
+    color: rgb(24, 96, 99);
+    padding-left: 5px;
+}
+button{
+    width: 5rem;
+    height: 1.8rem;
+    border-radius: .3rem;
+    border: none;
+    margin: .2rem 1rem 0 0;
+}
+button:hover{
+    cursor: pointer;
+}
+.rd{
+    width: 3rem;
+    margin-top: 1rem;
+}
+.valid{
+    color: rgb(202, 33, 33);
+    font-size: .91rem;
+}
+h3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.re{
+    background-color: rgb(170, 17, 17);
+}
+.su{
+    background-color: rgb(26, 192, 90);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get">
+            <h3>Feedback Form</h3>
+            <div>
+                <input id="id" type="text" required placeholder="Person ID" class="input" onchange="idcheck()">
+                <p id="v-id" class="valid"></p>
+            </div>
+            <div>
+                <input id="name" type="text" required placeholder="Event Name" class="input" onchange="namecheck()" >
+                <p id="v-name" class="valid"></p>
+            </div>
+            <div>
+                Gender : <br>
+                <input class="rd" checked type="radio" name="r1">Male
+                <input class="rd" type="radio" name="r1">Female
+            </div>
+            <div>
+                <input id="phno" onchange="validph()" type="number" required placeholder="Contact No" class="input">
+                <p id="v-phone" class="valid"></p>
+            </div>
+            <div>
+                <textarea placeholder="Comments" class="txtarea"></textarea>
+            </div>
+            <div>
+                <button type="reset" class="re">Reset</button>
+                <button id="sub" type="submit" class="su">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script >
+        ph = document.getElementById('phno');
+idc = document.getElementById('id');
+namec = document.getElementById('name');
+
+sub = document.getElementById('sub');
+v_ph = document.getElementById('v-phone');
+v_id = document.getElementById('v-id');
+v_name = document.getElementById('v-name');
+
+function validph(){
+    if(ph.value.length != 10){
+        v_ph.innerHTML="Phone number be 10 digits";
+        sub.disabled = true;
+        sub.style.backgroundColor='Orange'
+    }
+    else{
+        v_ph.innerHTML="";
+        sub.disabled = false;
+        sub.style.backgroundColor='rgb(26, 192, 90)';
+    }
+}
+function idcheck(){
+    if ( /[^a-zA-Z0-9\-\/]/.test( idc.value ) ) {
+        v_id.innerHTML="Only alphanumeric";
+        sub.disabled = true;
+        sub.style.backgroundColor='Orange'
+    } else {
+        v_id.innerHTML="";
+        sub.disabled = false;
+        sub.style.backgroundColor='rgb(26, 192, 90)';
+    }
+}
+function namecheck(){
+    if ( /[^a-zA-Z\-\/]/.test( namec.value ) ) {
+        v_name.innerHTML="Only alphabets";
+        sub.disabled = true;
+        sub.style.backgroundColor='Orange'
+    } else {
+        v_name.innerHTML="";
+        sub.disabled = false;
+        sub.style.backgroundColor='rgb(26, 192, 90)';
+    }
+}
+    </script>
+</body>
+</html>

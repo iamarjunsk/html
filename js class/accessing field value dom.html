@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function f1()
+{
+ var i= document.f.name.value;
+ document.getElementById("p1").innerHTML=i;
+}
+</script>
+</body>
+<form name="f">
+Name of the Department:<input type="text" name="name">
+<input type="button" onclick="f1()" value="submit">
+</form>
+<p id="p1"></p>
+</body>
+</html>

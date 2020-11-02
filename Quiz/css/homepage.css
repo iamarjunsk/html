@@ -1,0 +1,121 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../pics/93128-OJM4KV-79.jpg');
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;;
+}
+.main .container{
+    background: rgba(28, 122, 118, 0.384);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(34, 111, 124);
+    font-size: 1.3rem;
+}
+.main .container .q-container{
+    width: 34rem;
+    /* width: 544px; */
+    height: 18rem;
+    background: rgba(20, 173, 148, 0.664);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 14px 8px rgba(3, 61, 63, 0.788);
+    display: flex;
+    flex-direction: column;
+}
+.ques{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.choice{
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.choice div{
+    background-color: #fff;
+    width: 11rem;
+    height: auto;
+    min-height: 1rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem .7rem 1rem;
+    border-radius: 1rem;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.next{
+    flex: 1;
+    /* margin: 1rem; */
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+}
+.next .button{
+    grid-area: 1/4;
+    width: 5rem;
+    height: 1.92rem;
+    border-style: none;
+    background-color: rgba(22, 139, 110, 0.582);
+    color: #fff;
+    margin-left: .4rem;
+    margin-bottom: .5rem;
+    margin-top: .6rem;
+    border-radius: .4rem;
+    transition: ease-in-out .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .9rem;
+    cursor: pointer;
+}
+.next .button:hover{
+    background-color: rgba(22, 139, 110, 0.918);
+    box-shadow: 1px 1px 6px 2px rgba(3, 61, 63, 0.788);
+}
+.next .count{
+    grid-area: 1/1;
+    margin-left: 3rem;
+    margin-top: .6rem;
+}
+
+
+
+
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+    .main .container .q-container{
+        width: 20rem;
+    }
+    .choice div{
+        width: 6rem;
+        margin-left: 1rem;
+    }
+    .ques{
+        text-align: center;
+    }
+    .next .count{
+        margin-left: 1.5rem;
+    }
+    .next .button{
+        margin-right: 1rem;
+    }
+  }

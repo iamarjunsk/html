@@ -1,0 +1,40 @@
+<html>
+<head><title>Registration</title>
+<script src="validate.js" type="text/javascript">
+</script>
+</head> 
+<body>
+<form name="f1" onsubmit="return validate_form()" method="post" action="register.html">
+<table align="center">
+	<tr>
+		<td>Name</td>
+		<td><input type="text" name="name" required></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td><input type="text" name="email" required></td>
+	</tr>
+	<tr>
+		<td>Phone NO</td>
+		<td><input type="text" size="10" name="ph" required></td>
+	</tr>
+	<tr>
+		<td>User Name</td>
+		<td><input type="text" name="un" required></td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td><input type="password" name="p1" required></td>
+	</tr>
+	<tr>
+                <td>Confirm Password</td>
+                <td><input type="password" name="p2" required></td>
+        </tr>
+	<tr>
+		<td colspan="2"><input type="submit" value="Register"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
+

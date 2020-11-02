@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script>
+      function one() {
+        x = document.getElementById("name1").value;
+        y = document.getElementById("name2").value;
+        z = document.getElementById("name3").value;
+        if (x > y && x > z) {
+          document.write("Largest of given numbers:" + x);
+        } else if (y > x && y > z) {
+          document.write("Largest of given numbers:" + y);
+        } else {
+          document.write("Largest of given numbers:" + z);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form>
+      Enter the First Number<input
+        type="text"
+        id="name1"
+        onselect="one()"
+      /><br />
+      Enter the Second Number<input
+        type="text"
+        id="name2"
+        onselect="one()"
+      /><br />
+      Enter the Third Number<input type="text" id="name3" onselect="one()" />
+      <input type="button" value="click" onclick="one()" />
+    </form>
+  </body>
+</html>

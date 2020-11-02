@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var z=50;
+        function c1(){
+            window.j=100 // this way out
+            var i=150; // this way output is undefined
+            document.write("Local scope of i :"+i)
+        }
+        function c2(){
+            document.write("<br>j:"+window.j);
+            document.write("<br>z:"+z);
+            document.write(i);
+        }
+        c1();
+        c2();
+    </script>
+</body>
+</html>

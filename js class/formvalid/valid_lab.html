@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form action="fake.html" method="get" onsubmit="return submiting()">
+            <h3>Feedback Form</h3>
+            <div>
+                <input id="id" type="text" required placeholder="Person ID" class="input" onchange="idcheck()">
+                <p id="v-id" class="valid"></p>
+            </div>
+            <div>
+                <input id="name" type="text" required placeholder="Event Name" class="input" onchange="namecheck()" >
+                <p id="v-name" class="valid"></p>
+            </div>
+            <div>
+                <input id="email" type="text" required placeholder="Email" class="input" onchange="emailcheck()" >
+                <p id="v-email@" class="valid"></p>
+                <p id="v-email." class="valid"></p>
+            </div>
+            <div>
+                Gender : <br>
+                <input class="rd" checked type="radio" name="r1">Male
+                <input class="rd" type="radio" name="r1">Female
+            </div>
+            <div>
+                <input id="phno" onchange="validph()" type="number" required placeholder="Contact No" class="input">
+                <p id="v-phone" class="valid"></p>
+            </div>
+            <div>
+                <textarea required placeholder="Comments" class="txtarea"></textarea>
+            </div>
+            <div>
+                <button type="reset" class="re">Reset</button>
+                <button id="sub" type="submit" class="su">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="./valid.js"></script>
+</body>
+</html>
