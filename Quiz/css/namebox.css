@@ -1,0 +1,20 @@
+.nameBox{
+    background-color: rgb(176, 221, 219);
+    padding: 3rem 5rem;
+    border-radius: .4rem;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
+}
+.nameBox h4{
+    padding: 5px;
+}
+.nameBox input{
+    width: 14rem;
+    height: 1.3rem;
+    margin-top: 1rem;
+    background-color: rgba(255, 255, 255, 0);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-left: 6px;
+    color: rgb(24, 107, 107);
+}

@@ -1,0 +1,100 @@
+.qaddCondiner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+    height: 70vh;
+    /* overflow: hidden; */
+}
+.qaddSec{
+    padding: 2rem 1rem 3rem 4rem;
+    background-color: rgb(5, 35, 39);
+    /* height: auto; */
+}
+.btnOrange{
+    background-color: orange;
+    height: 33px;
+}
+.qdispSec{
+    padding: 2rem;
+    background-color: rgb(5, 35, 39);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+.qs{
+    margin-bottom: .5rem;
+    background-color: whitesmoke;
+    border-radius: .2rem;
+    border: 1px solid #ddd;
+    width: 34rem;
+    min-height: 1.7rem;
+    overflow-wrap: break-word;
+    
+}
+/* .qs p{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: auto;
+} */
+.inpQ {
+    min-height: 20px;
+    height: auto;
+    min-width: 32rem;
+    border-radius: .2rem;
+    border: 1px solid skyblue;
+    height: 1.7rem;
+    margin-left: .3rem;
+}
+.inp {
+    height: 18rem;
+    margin-bottom: 15px;
+    width: 250px;
+    border-radius: .2rem;
+    border: 1px solid skyblue;
+    margin-top: 1rem;
+    height: 1.7rem;
+    margin-left: .3rem;
+}
+.ans{
+    top: 100px;
+    left: 30px;
+    width: 160px;
+    height: 20px;
+    border: 1px solid skyblue;
+    border-radius: .2rem;
+}
+.btn{
+    width: 100px;
+    height: 26px;
+    border-radius: .2rem;
+    border: 1px solid skyblue;
+    margin-top: 10px;
+}
+.q1{
+    width: 250px;
+    height: 20px;
+    background-color: whitesmoke;
+    border-radius: .2rem;
+    border: 1px solid #ddd;
+}
+.q2{
+    width: 250px;
+    height: 20px;
+    background-color: whitesmoke;
+    border-radius: .2rem;
+    border: 1px solid #ddd;
+}
+.q3{
+    width: 250px;
+    height: 20px;
+    background-color: whitesmoke;
+    border-radius: .2rem;
+    border: 1px solid #ddd;
+}
+.qhead{
+    margin: 2rem 0 1rem 0;
+}
