@@ -114,5 +114,7 @@ function qaddpage(){
 }
 function logpageadd(){
   app.innerHTML=logpage;
+  user.score=0;
+  curq=1;
 }
 app.innerHTML=logpage;

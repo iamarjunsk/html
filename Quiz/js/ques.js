@@ -15,6 +15,7 @@ let ch,qn;
 
 function loadq(){
     loadElem();
+    qindex=0;
     qn=questions[0];
     q_tag.innerHTML=qn.q;
     ch1_tag.innerHTML=qn.a;
